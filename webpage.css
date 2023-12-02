@@ -29,3 +29,13 @@ img {display: inline-block; margin: -10px 100px 0px 0px}
 /* -----------------------------------------------------------------------------
 /* text wrapper */
 #policy-wrapper{width: 1000px; margin: 3vw auto;}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ11FKQXE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WJ11FKQXE4');
+</script>
