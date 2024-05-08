@@ -29,3 +29,9 @@ img {display: inline-block; margin: -10px 100px 0px 0px}
 /* -----------------------------------------------------------------------------
 /* text wrapper */
 #policy-wrapper{width: 1000px; margin: 3vw auto;}
+
+/* -----------------------------------------------------------------------------
+/* contact.html guidelines
+/* -----------------------------------------------------------------------------
+/* text wrapper */
+#contact-wrapper{width: 1000px; margin: 3vw auto;}
