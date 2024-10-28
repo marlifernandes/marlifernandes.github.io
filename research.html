@@ -10,10 +10,9 @@
     <style>
         /* Style for collapsible abstract section */
         .abstract {
-            display: none !important; /* Hidden by default */
+            display: none; /* Hidden by default */
             margin-top: 10px;
             font-style: italic;
-            overflow: visible !important; /* Ensures full visibility */
         }
 
         .toggle-button {
@@ -36,6 +35,12 @@
         .arrow {
             margin-left: 5px;
             font-size: 0.9em;
+        }
+
+        /* Optional Scrollable Abstract */
+        .abstract.scrollable {
+            max-height: 200px; /* Adjust based on desired max height */
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -67,8 +72,8 @@
                 <span>Abstract</span>
                 <span class="arrow">&#9660;</span> <!-- Down arrow symbol -->
             </button>
-            <div class="abstract" id="abstract1">
-                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men...</p>
+            <div class="abstract scrollable" id="abstract1">
+                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men. I find that women give more salience to topics such as security and foreign policy than males. This result is stronger in places where there is more substantial voter gender bias: in districts that have never elected a woman or where the gender wage gap is higher. I causally show that when women run against men, as opposed to running against a woman, they strategically give more prevalence to male-stereotypical topics. However, once elected, women provide more coverage to female stereotyped issues, health and education compared to male colleagues. In contrast, when male politicians run against women, they adapt their platforms more marginally.</p>
             </div>
         </div>
 
@@ -84,7 +89,7 @@
                 <span>Abstract</span>
                 <span class="arrow">&#9660;</span>
             </button>
-            <div class="abstract" id="abstract2">
+            <div class="abstract scrollable" id="abstract2">
                 <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election...</p>
                 <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
             </div>
@@ -97,7 +102,7 @@
                 <span>Abstract</span>
                 <span class="arrow">&#9660;</span>
             </button>
-            <div class="abstract" id="abstract3">
+            <div class="abstract scrollable" id="abstract3">
                 <p>Abstract text for Paper 3 goes here. Briefly summarize the research, methods, and findings relevant to this topic.</p>
             </div>
         </div>
