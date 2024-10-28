@@ -8,26 +8,33 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./webpage.css">
     <style>
-        /* Style for collapsible button and abstract */
+        /* Style for collapsible abstract section */
         .abstract {
             display: none; /* Hidden by default */
             margin-top: 10px;
             font-style: italic;
         }
 
-      .toggle-button {
-            color: #007bff;
+        .toggle-button {
+            font-style: italic;
             cursor: pointer;
             border: none;
             background: none;
             font-size: 1em;
             padding: 0;
             margin-top: 5px;
-            text-decoration: underline;
+            display: flex;
+            align-items: center;
         }
 
         .toggle-button:focus {
             outline: none;
+        }
+
+        /* Arrow styling */
+        .arrow {
+            margin-left: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -44,9 +51,9 @@
             <a href="https://marlifernandes.github.io/policy">Policy</a> &emsp;
             <a href="https://marlifernandes.github.io/contact">Contact</a> &emsp;
         </h3>
-
         <!-- Working Papers Section -->
         <h3>Working Papers</h3>
+
         <!-- Paper 1 -->
         <div class="paper">
             <h4>
@@ -54,9 +61,12 @@
                     When Women Run Against Men: Evidence from Political Platforms
                 </a>
             </h4>
-            <button class="toggle-button" onclick="toggleAbstract('abstract1')">Abstract</button>
+            <button class="toggle-button" onclick="toggleAbstract('abstract1')">
+                <span>Abstract</span>
+                <span class="arrow">&#9660;</span> <!-- Down arrow symbol -->
+            </button>
             <div class="abstract" id="abstract1">
-                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men. I find that women give more salience to topics such as security and foreign policy than males...</p>
+                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men...</p>
             </div>
         </div>
 
@@ -68,7 +78,10 @@
                 </a>
             </h4>
             <p>with <a href='https://www.novasbe.unl.pt/en/faculty-research/faculty/faculty-detail/id/30/jose-m-tavares' target='_blank' rel='noopener noreferrer'>José Tavares</a></p>
-            <button class="toggle-button" onclick="toggleAbstract('abstract2')">Abstract</button>
+            <button class="toggle-button" onclick="toggleAbstract('abstract2')">
+                <span>Abstract</span>
+                <span class="arrow">&#9660;</span>
+            </button>
             <div class="abstract" id="abstract2">
                 <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election...</p>
                 <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
@@ -78,7 +91,10 @@
         <!-- Paper 3 -->
         <div class="paper">
             <h4>The effects of non-cognitive skills on the native-migrant wage gap</h4>
-            <button class="toggle-button" onclick="toggleAbstract('abstract3')">Abstract</button>
+            <button class="toggle-button" onclick="toggleAbstract('abstract3')">
+                <span>Abstract</span>
+                <span class="arrow">&#9660;</span>
+            </button>
             <div class="abstract" id="abstract3">
                 <p>Abstract text for Paper 3 goes here. Briefly summarize the research, methods, and findings relevant to this topic.</p>
             </div>
@@ -96,10 +112,14 @@
     <script>
         function toggleAbstract(id) {
             const abstract = document.getElementById(id);
+            const arrow = abstract.previousElementSibling.querySelector(".arrow");
+
             if (abstract.style.display === "none" || abstract.style.display === "") {
                 abstract.style.display = "block";
+                arrow.innerHTML = "&#9650;"; // Up arrow symbol
             } else {
                 abstract.style.display = "none";
+                arrow.innerHTML = "&#9660;"; // Down arrow symbol
             }
         }
     </script>
