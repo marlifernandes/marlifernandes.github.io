@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Webpage title -->
     <title>Marli Guimarães Fernandes</title>
+    <!-- Fonts from Google API -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./webpage.css">
     <style>
         /* Style for collapsible abstract section */
         .abstract {
-            display: none; /* Hidden by default */
+            display: none !important; /* Hidden by default */
             margin-top: 10px;
             font-style: italic;
-            width: 100%; /* Ensure it takes full width */
+            overflow: visible !important; /* Ensures full visibility */
         }
 
-        /* Toggle button style */
         .toggle-button {
             font-style: italic;
             cursor: pointer;
@@ -26,22 +28,21 @@
             align-items: center;
         }
 
+        .toggle-button:focus {
+            outline: none;
+        }
+
         /* Arrow styling */
         .arrow {
             margin-left: 5px;
             font-size: 0.9em;
-        }
-
-        /* Ensure container does not limit visibility */
-        #research-wrapper {
-            width: 100%;
-            max-width: none; /* Remove any container restrictions */
         }
     </style>
 </head>
 
 <body>
     <div id="research-wrapper">
+
         <!-- Header with name and tabs -->
         <h1><a href="https://marlifernandes.github.io">Marli Guimarães Fernandes</a></h1>
         <h3>
@@ -67,7 +68,7 @@
                 <span class="arrow">&#9660;</span> <!-- Down arrow symbol -->
             </button>
             <div class="abstract" id="abstract1">
-                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup...</p>
+                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men...</p>
             </div>
         </div>
 
@@ -84,7 +85,7 @@
                 <span class="arrow">&#9660;</span>
             </button>
             <div class="abstract" id="abstract2">
-                <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022...</p>
+                <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election...</p>
                 <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
             </div>
         </div>
@@ -106,6 +107,7 @@
         <h4>Clientelism in Public-Sector Firms: Evidence from Portugal (with Pedro S. Martins and José Tavares)</h4>
         <h4>Natural Disasters, Political Narratives and Environmental Policies in Brazil</h4>
         <h4>Strategic Supply of Populism: Evidence from Campaigns in the UK (with Antonio Nicolo and Carlo Reggiani)</h4>
+
     </div>
 
     <!-- JavaScript to toggle abstracts -->
@@ -114,7 +116,6 @@
             const abstract = document.getElementById(id);
             const arrow = abstract.previousElementSibling.querySelector(".arrow");
 
-            // Toggle display of the abstract content
             if (abstract.style.display === "none" || abstract.style.display === "") {
                 abstract.style.display = "block";
                 arrow.innerHTML = "&#9650;"; // Up arrow symbol
