@@ -1,113 +1,107 @@
-<! marli guimaraes fernandes homepage >
-
-<! start files to use within .html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<! webpage title>
-<title>Marli Guimarães Fernandes</title>
-<! fonts.googleapis; font from google api >
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
-<! .css>
-<link rel="stylesheet" href="./webpage.css">
+    <!-- Webpage title -->
+    <title>Marli Guimarães Fernandes</title>
+    <!-- Fonts from Google API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./webpage.css">
+    <style>
+        /* Style for collapsible button and abstract */
+        .abstract {
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+      .toggle-button {
+            color: #007bff;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            padding: 0;
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+
+        .toggle-button:focus {
+            outline: none;
+        }
+    </style>
 </head>
-<! end files to use within .html >
 
-<! start .html >
-<html>
+<body>
+    <div id="research-wrapper">
 
-<! start wrapper >
-<div id="research-wrapper">
+        <!-- Header with name and tabs -->
+        <h1><a href="https://marlifernandes.github.io">Marli Guimarães Fernandes</a></h1>
+        <h3>
+            <a href="https://marlifernandes.github.io/">About Me</a> &emsp;
+            <a href="https://marlifernandes.github.io/CV/CV_MarliFernandes.pdf">CV</a> &emsp;
+            <a href="https://marlifernandes.github.io/research">Research</a> &emsp;
+            <a href="https://marlifernandes.github.io/policy">Policy</a> &emsp;
+            <a href="https://marlifernandes.github.io/contact">Contact</a> &emsp;
+        </h3>
 
-<! start name >
-<h1>
-<a href="https://marlifernandes.github.io"> Marli Guimarães Fernandes</a>
-</h1>
-<! end name >
+        <!-- Working Papers Section -->
+        <h3>Working Papers</h3>
+        <!-- Paper 1 -->
+        <div class="paper">
+            <h4>
+                <a href='https://marlifernandes.github.io/JMP/MarliFernandes_JMP.pdf' target='_blank' rel='noopener noreferrer'>
+                    When Women Run Against Men: Evidence from Political Platforms
+                </a>
+            </h4>
+            <button class="toggle-button" onclick="toggleAbstract('abstract1')">Abstract</button>
+            <div class="abstract" id="abstract1">
+                <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men. I find that women give more salience to topics such as security and foreign policy than males...</p>
+            </div>
+        </div>
 
-<! start tabs >
-<h3>
-<! about tab >
-<a href="https://marlifernandes.github.io/"> About Me</a> &emsp;
-<! cv >
-<a href="https://marlifernandes.github.io/CV/CV_MarliFernandes.pdf"> CV</a> &emsp;
-<! research tab >
-<a href="https://marlifernandes.github.io/research"> Research</a> &emsp;
-<! policy tab >
-<a href="https://marlifernandes.github.io/policy"> Policy</a> &emsp;
-<! contact tab >
-<a href="https://marlifernandes.github.io/contact"> Contact</a> &emsp;
-</h3>
-<! end tabs >
+        <!-- Paper 2 -->
+        <div class="paper">
+            <h4>
+                <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_MarliFernandes.pdf' target='_blank' rel='noopener noreferrer'>
+                    Ne me quitte pas! School closures and the rise of far-right in France
+                </a>
+            </h4>
+            <p>with <a href='https://www.novasbe.unl.pt/en/faculty-research/faculty/faculty-detail/id/30/jose-m-tavares' target='_blank' rel='noopener noreferrer'>José Tavares</a></p>
+            <button class="toggle-button" onclick="toggleAbstract('abstract2')">Abstract</button>
+            <div class="abstract" id="abstract2">
+                <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election...</p>
+                <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
+            </div>
+        </div>
 
-<! vertical space >
-&emsp;
-<! vertical space >
+        <!-- Paper 3 -->
+        <div class="paper">
+            <h4>The effects of non-cognitive skills on the native-migrant wage gap</h4>
+            <button class="toggle-button" onclick="toggleAbstract('abstract3')">Abstract</button>
+            <div class="abstract" id="abstract3">
+                <p>Abstract text for Paper 3 goes here. Briefly summarize the research, methods, and findings relevant to this topic.</p>
+            </div>
+        </div>
 
-<! start wip title >
-<h3>
-Working Papers
-</h3>
-<! end wip title >
+        <!-- Work in Progress Section -->
+        <h3>Work in Progress</h3>
+        <h4>Clientelism in Public-Sector Firms: Evidence from Portugal (with Pedro S. Martins and José Tavares)</h4>
+        <h4>Natural Disasters, Political Narratives and Environmental Policies in Brazil</h4>
+        <h4>Strategic Supply of Populism: Evidence from Campaigns in the UK (with Antonio Nicolo and Carlo Reggiani)</h4>
 
-<! start JMP title >
-<h4>
-<a href='https://marlifernandes.github.io/JMP/MarliFernandes_JMP.pdf' target='_blank' rel='noopener noreferrer'>When Women Run Against Men: Evidence from Political Platforms</a>
-</h4>
-<! end JMP title >
+    </div>
 
-<! start abstract >
-<p>
-Abstract: Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men. I find that women give more salience to topics such as security and foreign policy than males. This result is stronger in places where there is more substantial voter gender bias: in districts that have never elected a woman or where the gender wage gap is higher. I causally show that when women run against men, as opposed to running against a woman, they strategically give more prevalence to male-stereotypical topics. However, once elected, women provide more coverage to female stereotyped issues, health and education compared to male colleagues. In contrast, when male politicians run against women, they adapt their platforms more marginally.
-</p>
-<! end abstract >
-
-<! start wip/#2 title >
-<h4>
-<a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_MarliFernandes.pdf' target='_blank' rel='noopener noreferrer'>Ne me quitte pas! School closures and the rise of far-right in France</a>
-</h4>
-<! end wip/#1 title >
-
-<! start abstract >
-<p>
-with <a href='https://www.novasbe.unl.pt/en/faculty-research/faculty/faculty-detail/id/30/jose-m-tavares' target='_blank' rel='noopener noreferrer'>José Tavares</a>
-</p>
-Abstract: School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election in municipalities where the only school closed. This effect grows in the next three elections and reaches 1.818 percentage points. We show that voters leaving the municipality cannot explain this effect. However, we provide suggestive evidence that the increase was higher in places that initially voted more for the far-right. In municipalities with more than one school, an effect does not seem to exist, showing that citizens are concerned with the accessibility of public service.
-</p>
-<a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
-</p>
-<! end abstract >
-
-<! start wip/#3 title >
-<h4>
-The effects of non-cognitive skills on the native-migrant wage gap
-</h4>
-<! end wip/#1 title >
-
-<! vertical space >
-&emsp;
-<! vertical space >
-
-<! start wkp title >
-<h3>
-<p>
-Work in Progress
-</p>
-</h3>
-<! end wkp title >
-
-<! start wkp/#1 title >
-<h4>
-Clientelism in Public-Sector Firms: Evidence from Portugal (with Pedro S. Martins and José Tavares)
-</h4>
-<h4>
-Natural Disasters, Political Narratives and Environmental Policies in Brazil
-</h4>
-<h4>
-Strategic Supply of Populism: Evidence from Campaigns in the UK (with Antonio Nicolo and Carlo Reggiani)
-</h4>
-<! end wkp/#1 title >
-
-</div>
-<! end wrapper >
-
+    <!-- JavaScript to toggle abstracts -->
+    <script>
+        function toggleAbstract(id) {
+            const abstract = document.getElementById(id);
+            if (abstract.style.display === "none" || abstract.style.display === "") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
-<! end html >
