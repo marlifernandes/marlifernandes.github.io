@@ -8,8 +8,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./webpage.css">
     <style>
-        /* Style for collapsible abstract section */
-        .abstract {
+        /* Style for collapsible abstract and presentation sections */
+        .abstract, .presentation {
             display: none; /* Hidden by default */
             margin-top: 10px;
             font-style: italic;
@@ -66,12 +66,21 @@
                     When Women Run Against Men: Evidence from Political Platforms
                 </a>
             </h4>
-            <button class="toggle-button" onclick="toggleAbstract('abstract1')">
+            <button class="toggle-button" onclick="toggleSection('abstract1')">
                 <span>Abstract</span>
                 <span class="arrow">&#9660;</span> <!-- Down arrow symbol -->
             </button>
             <div class="abstract" id="abstract1">
                 <p>Do female and male candidates differ in their political campaigns? And why do they differ? Using individual political platforms from legislative elections in France, I combine computational text analysis with a regression discontinuity design setup in the two-round French legislative elections to understand political campaign differences between women and men. I find that women give more salience to topics such as security and foreign policy than males. This result is stronger in places where there is more substantial voter gender bias: in districts that have never elected a woman or where the gender wage gap is higher. I causally show that when women run against men, as opposed to running against a woman, they strategically give more prevalence to male-stereotypical topics. However, once elected, women provide more coverage to female stereotyped issues, health and education compared to male colleagues. In contrast, when male politicians run against women, they adapt their platforms more marginally.</p>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('presentation1')">
+                <span>Presentation</span>
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="presentation" id="presentation1">
+                <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>
+                    (Presentation)
+                </a>
             </div>
         </div>
 
@@ -83,47 +92,39 @@
                 </a>
             </h4>
             <p>with <a href='https://www.novasbe.unl.pt/en/faculty-research/faculty/faculty-detail/id/30/jose-m-tavares' target='_blank' rel='noopener noreferrer'>José Tavares</a></p>
-            <button class="toggle-button" onclick="toggleAbstract('abstract2')">
+            <button class="toggle-button" onclick="toggleSection('abstract2')">
                 <span>Abstract</span>
                 <span class="arrow">&#9660;</span>
             </button>
             <div class="abstract" id="abstract2">
                 <p>School closures and consolidation is a policy advocated in several OECD countries. This paper studies the impact of school closures on far-right votes in France between 1995 and 2022. Using a matched difference-in-differences design, we causally show that votes on the Rassemblement National increased by 0.713 percentage points in the first election in municipalities where the only school closed. This effect grows in the next three elections and reaches 1.818 percentage points. We show that voters leaving the municipality cannot explain this effect. However, we provide suggestive evidence that the increase was higher in places that initially voted more for the far-right. In municipalities with more than one school, an effect does not seem to exist, showing that citizens are concerned with the accessibility of public service.</p>
-                <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>(Presentation)</a>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('presentation2')">
+                <span>Presentation</span>
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="presentation" id="presentation2">
+                <a href='https://marlifernandes.github.io/Nemequittepas/Nemequittepas_presentation.pdf' target='_blank' rel='noopener noreferrer'>
+                    (Presentation)
+                </a>
             </div>
         </div>
 
-        <!-- Paper 3 -->
-        <div class="paper">
-            <h4>The effects of non-cognitive skills on the native-migrant wage gap</h4>
-        </div>
+        <!-- JavaScript to toggle abstracts and presentations -->
+        <script>
+            function toggleSection(id) {
+                const section = document.getElementById(id);
+                const arrow = section.previousElementSibling.querySelector(".arrow");
 
-        <! vertical space >
-        &emsp;
-        <! vertical space >
-
-        <!-- Work in Progress Section -->
-        <h3>Work in Progress</h3>
-        <h4>Clientelism in Public-Sector Firms: Evidence from Portugal (with Pedro S. Martins and José Tavares)</h4>
-        <h4>Natural Disasters, Political Narratives and Environmental Policies in Brazil</h4>
-        <h4>Strategic Supply of Populism: Evidence from Campaigns in the UK (with Antonio Nicolo and Carlo Reggiani)</h4>
-
-    </div>
-
-    <!-- JavaScript to toggle abstracts -->
-    <script>
-        function toggleAbstract(id) {
-            const abstract = document.getElementById(id);
-            const arrow = abstract.previousElementSibling.querySelector(".arrow");
-
-            if (abstract.style.display === "none" || abstract.style.display === "") {
-                abstract.style.display = "block";
-                arrow.innerHTML = "&#9650;"; // Up arrow symbol
-            } else {
-                abstract.style.display = "none";
-                arrow.innerHTML = "&#9660;"; // Down arrow symbol
+                if (section.style.display === "none" || section.style.display === "") {
+                    section.style.display = "block";
+                    arrow.innerHTML = "&#9650;"; // Up arrow symbol
+                } else {
+                    section.style.display = "none";
+                    arrow.innerHTML = "&#9660;"; // Down arrow symbol
+                }
             }
-        }
-    </script>
+        </script>
+    </div>
 </body>
 </html>
