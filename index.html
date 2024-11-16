@@ -18,6 +18,35 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
 <! .css>
 <link rel="stylesheet" href="./webpage.css">
+<style>
+  #index-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  #picture {
+    flex: 0 0 auto; /* Prevent resizing */
+  }
+
+  #content {
+    flex: 1;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  #content h1 {
+    margin-top: 0;
+  }
+
+  #upcoming-talks {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+</style>
 </head>
 <! end files to use within .html >
 
@@ -27,58 +56,70 @@
 <! start wrapper >
 <div id="index-wrapper">
 
-<! start body >
-<body>
+  <! start picture >
+  <div id="picture">
+    <img src="./foto.JPG" width="340" height="465" alt="Marli Guimarães Fernandes">
+  </div>
+  <! end picture >
 
-<! start picture >
+  <! start content >
+  <div id="content">
+    <! start name >
+    <h1>Marli Guimarães Fernandes</h1>
+    <! end name >
 
-<img src="./foto.JPG"  width="340" height="465" align="left" margin-right: 1000 margin-top:10000000
-<! end picture>
+    <! start tabs >
+    <h3>
+      <! about tab >
+      <a href="https://marlifernandes.github.io/"> About Me </a> &emsp;
+      <! cv tab >
+      <a href="https://marlifernandes.github.io/CV/CV_MarliFernandes.pdf"> CV </a> &emsp;
+      <! research tab >
+      <a href="https://marlifernandes.github.io/research"> Research</a> &emsp;
+      <! policy tab >
+      <a href="https://marlifernandes.github.io/policy"> Policy </a> &emsp;
+      <! contact tab >
+      <a href="https://marlifernandes.github.io/contact"> Contact </a> &emsp;
+    </h3>
+    <! end tabs >
 
-<! start name >
-<h1>
-Marli Guimarães Fernandes
-</h1>
-<! end name >
+    <! start description >
+    <p>
+      I am currently a Postdoctoral researcher at the <a href='https://www.economia.unipd.it/en/'> Department of Economics and Management "Marco Fanno" at the University of Padova. </a> 
+    </p>  
+    <p>
+      I am involved in a project about "The political economy of reforms and the costs of populism" (PERCOP).
+    </p>
+    <p>
+      I hold a Ph.D. in Economics from <a href='https://www.novasbe.unl.pt/en/programs/phds/phd-in-economics-finance/overview?_gl=1*1hgdjyu*_up*MQ..*_ga*MTI1NzI1NDE3Ni4xNzE1MTYyMDU0*_ga_NRJH2682FN*MTcxNTE2MjA1NC4xLjAuMTcxNTE2MjA1NC4wLjAuMA..'> Nova School of Business and Economics. </a> 
+    </p>
+    <p>
+      I am affiliated with the <a href="https://economicsforpolicy.novasbe.pt/"> Economics for Policy Knowledge Center </a>.
+    </p>
+    <p>
+      I am an applied microeconomist with research interests in political economy. I am particularly interested in studying contemporaneous topics relevant to liberal democracies and their core values.
+    </p>
+    <p>
+      My empirical work combines causal inference methods with several types of data (administrative, survey, or text data).
+    </p>
+    <p>
+      <strong>Research field:</strong> Political Economy
+    </p>
+    <p>
+      <strong>Research methods:</strong> Causal inference, Natural language processing
+    </p>
+    <! end description >
 
-<! start tabs >
-<h3>
-<! about tab >
-<a href="https://marlifernandes.github.io/"> About Me </a> &emsp;
-<! cv tab >
-<a href="https://marlifernandes.github.io/CV/CV_MarliFernandes.pdf"> CV </a> &emsp;
-<! research tab >
-<a href="https://marlifernandes.github.io/research"> Research</a> &emsp;
-<! policy tab >
-<a href="https://marlifernandes.github.io/policy"> Policy </a> &emsp;
-<! contact tab >
-<a href="https://marlifernandes.github.io/contact"> Contact </a> &emsp;
-</h3>
-<! end tabs >
-
-<! start description >
-<p>
-I am currently a Postdoctoral researcher at the <a href='https://www.economia.unipd.it/en/'> Department of Economics and Management "Marco Fanno" at the University of Padova. </a> 
-</p>  
-I am involved in a project about "The political economy of reforms and the costs of populism" (PERCOP).
-</p>
-I hold Ph.D. in Economics from <a href='https://www.novasbe.unl.pt/en/programs/phds/phd-in-economics-finance/overview?_gl=1*1hgdjyu*_up*MQ..*_ga*MTI1NzI1NDE3Ni4xNzE1MTYyMDU0*_ga_NRJH2682FN*MTcxNTE2MjA1NC4xLjAuMTcxNTE2MjA1NC4wLjAuMA..'> Nova School of Business and Economics. </a> 
-</p>
-I am affiliated with the <a href="https://economicsforpolicy.novasbe.pt/"> Economics for Policy Knowledge Center </a> &emsp;
-</p>
-I am an applied microeconomist with research interests in political economy. I am particularly interested in studying contemporaneous topics relevant to liberal democracies and their core values.
-</p>
-My empirical work combines causal inference methods with several types of data (administrative, survey or text data).
-</p>
-Research field: Political Economy
-</p>
-Research methods: Causal inference, Natural language processing
-</p>
-<br/><br/> 
-<! end description >
-  
-</body>
-<! end body >
+    <! Upcoming Talks Section -->
+    <div id="upcoming-talks">
+      <h2>Upcoming Talks</h2>
+      <ul>
+        <li>Bolzano conference</li>
+      </ul>
+    </div>
+    <! end Upcoming Talks Section -->
+  </div>
+  <! end content >
 
 </div>
 <! end wrapper >
