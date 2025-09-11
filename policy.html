@@ -1,40 +1,97 @@
-<! marli guimaraes fernandes homepage >
-
-<! start files to use within .html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<! webpage title>
-<title>Marli Guimarães Fernandes</title>
-<! fonts.googleapis; font from google api >
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
-<! .css>
-<link rel="stylesheet" href="./webpage.css">
+    <!-- Webpage title -->
+    <title>Marli Guimarães Fernandes</title>
+    <!-- Fonts from Google API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./webpage.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centered title */
+        #page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        /* Navigation bar */
+        #nav-bar {
+            text-align: center;
+            margin: 20px auto;
+            padding: 8px 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            max-width: 1000px; /* Same width as content */
+        }
+
+        #nav-bar a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: black;
+        }
+
+        #nav-bar a:hover {
+            color: gray;
+        }
+
+        /* Content wrapper (left aligned) */
+        #research-wrapper {
+            max-width: 1000px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        /* Collapsible sections */
+        .abstract, .presentation {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .toggle-button {
+            font-style: italic;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            padding: 0;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-button:focus {
+            outline: none;
+        }
+
+        /* Arrow styling */
+        .arrow {
+            margin-left: 5px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-<! end files to use within .html >
 
-<! start .html >
-<html>
+<body>
+    <!-- Title -->
+    <div id="page-title">Marli Guimarães Fernandes</div>
 
-<! start wrapper >
-<div id="research-wrapper">
+    <!-- Navigation bar -->
+    <div id="nav-bar">
+        <a href="https://marlifernandes.github.io/">About Me</a>
+        <a href="https://marlifernandes.github.io/research">Research</a>
+        <a href="https://marlifernandes.github.io/policy">Policy</a>
+    </div>
 
-<! start name >
-<h1>
-<a href="https://marlifernandes.github.io"> Marli Guimarães Fernandes</a>
-</h1>
-<! end name >
-
-<! start tabs >
-<h3>
-<! about tab >
-<a href="https://marlifernandes.github.io/"> About Me</a> &emsp;
-<! cv >
-<a href="https://marlifernandes.github.io/CV/CV_MarliFernandes.pdf"> CV</a> &emsp;
-<! research tab >
-<a href="https://marlifernandes.github.io/research"> Research</a> &emsp;
-<! policy tab >
-<a href="https://marlifernandes.github.io/policy"> Policy</a> &emsp;
-</h3>
-<! end tabs >
+    <!-- Main content -->
+    <div id="research-wrapper">
 
 <! vertical space >
 &emsp;
