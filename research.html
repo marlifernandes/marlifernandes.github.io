@@ -8,11 +8,45 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./webpage.css">
     <style>
+        body {
+            font-family: Arial, sans-serif; /* Keep same font */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Name at the top */
+        #name {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Navigation bar (same as homepage) */
+        #nav-bar {
+            text-align: center;
+            margin: 20px auto;
+            padding: 8px 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            max-width: 1000px; /* Same width as main content */
+        }
+
+        #nav-bar a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: black;
+        }
+
+        #nav-bar a:hover {
+            color: gray;
+        }
+
         /* Style for collapsible abstract and presentation sections */
         .abstract, .presentation {
             display: none; /* Hidden by default */
             margin-top: 10px;
-            /* Remove font-style: italic to make the text normal */
         }
 
         .toggle-button {
@@ -36,9 +70,15 @@
             margin-left: 5px;
             font-size: 0.9em;
         }
+
+        /* Content wrapper */
+        #research-wrapper {
+            max-width: 1000px;
+            margin: 30px auto;
+        }
     </style>
 </head>
-
+    
 <body>
     <div id="research-wrapper">
 
