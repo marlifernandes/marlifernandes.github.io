@@ -10,7 +10,7 @@
   gtag('config', 'G-WJ11FKQXE4');
 </script>
   
-<title>MF</title>
+<title>Marli Guimarães Fernandes</title>
 <link rel="stylesheet" href="./webpage.css">
 
 <style>
@@ -29,12 +29,24 @@
   }
 
   /* Navigation bar */
+/* Wrapper for picture + content */
+  #index-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;   /* Keeps content narrow */
+    margin: 30px auto;
+  }
+
+  /* Navigation bar */
   #nav-bar {
     text-align: center;
     margin: 20px auto;
-    padding: 10px 0;
-    border-top: 3px solid darkblue;
-    border-bottom: 3px solid darkblue;
+    padding: 8px 0;
+    border-top: 1px solid black;   /* Thin black line */
+    border-bottom: 1px solid black;
+    max-width: 1000px;             /* Match content width */
   }
 
   #nav-bar a {
@@ -45,7 +57,7 @@
   }
 
   #nav-bar a:hover {
-    color: darkblue;
+    color: gray;
   }
 
   /* Layout for picture + content */
