@@ -23,6 +23,27 @@ img {display: inline-block; margin: -10px 100px 0px 0px}
 /* -----------------------------------------------------------------------------
 /* text wrapper */
 #research-wrapper{width: 1000px; margin: 3vw auto;}
+.paper h4 a {
+    color: #2563eb;          /* paper title: blue */
+    text-decoration: none;
+}
+
+.paper h4 a:hover {
+    text-decoration: underline;
+}
+
+.paper p a {
+    color: #7c3aed;          /* co-author link: purple */
+    text-decoration: none;
+}
+
+.paper p a:hover {
+    text-decoration: underline;
+}
+
+.paper p em {
+    font-style: italic;      /* journal name */
+}
 
 /* -----------------------------------------------------------------------------
 /* policy.html guidelines
